@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript/jQuery1回目</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+
+  <!-- <div class='button'>押したら変化</div>
+  <div class='kekka'></div> -->
+
+  <!-- <div class='user'>
+    <p>どの手で勝負しますか</p>
+    <input type="button" value="グー" class="button1">
+    <input type="button" value="チョキ" class="button2">
+    <input type="button" value="パー" class="button3">
+  </div> -->
+  <div class="test">
+    <div class="all">
+      <div id="message1" >
+        <h3>CPUの手: なにかな〜</h3>
+      </div>
+
+      <div id="message2" >
+        <h3>結果: セレクトボックスから選択して「これで勝負」ボタンを押してください。</h3>
+      </div>
+      <form>
+        <select id="janken">
+            <option>ぐー</option>
+            <option>ちょき</option>
+            <option>ぱー</option>
+        </select>
+        <input type="button" value="これで勝負" onclick="myGame();countUpA()">
+      </form>
+
+    
+  </div>
+
+  <div class="container">
+    <div class="number">
+      <table>
+        <tr align="left">
+          <th>勝利数：</th>
+          <td id="victory">0</td>
+        </tr>
+        <tr align="left">
+          <th>敗北数：</th>
+          <td id="lost">0</td>
+        </tr>
+        <tr align="left">
+          <th>引き分け数：</th>
+          <td id="tie">0</td>
+        </tr>
+      </table>
+    </div>
+    <div class='user_result'></div>
+        <input type="button" value="結果をリセットする"
+              onclick="window.location.reload(true);">
+    </div>
+  </div>
+  <!-- <div class="container2">
+    <div class="number2">
+      <table>
+        <tr align="left">
+          <th>連勝数：</th>
+          <td id="victory2">0</td>
+        </tr>
+        <tr align="left">
+          <th>連敗数：</th>
+          <td id="lost2">0</td>
+        </tr>
+      </table>
+    </div>
+  </div> -->
+  <div id="animation">
+    勝利おめでとう！（勝利すると赤くなります）
+  </div>
+
+  <!-- <div class='cpu'>結果を押すとコンピューターが選んだ手がわかります</div>
+  <div class='cpu_result'></div> -->
+  
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/test.js"></script>
+</body>
+
+</html>
